@@ -1,69 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess Clock - Terms of Service</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Service – ChessClock</title>
+
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
+      :root {
+        --bg: #0f141a;
+        --card: #161d26;
+        --text: #eaf4ff;
+        --muted: #b7c7d8;
+        --primary: #42a5f5;
+        --primary-soft: rgba(66, 165, 245, 0.14);
+        --border: rgba(255, 255, 255, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(66, 165, 245, 0.18), transparent 32%),
+          linear-gradient(180deg, #0b1016 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .container {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      .hero {
+        padding: 56px 0 24px;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: var(--primary-soft);
+        color: var(--primary);
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        border: 1px solid rgba(66, 165, 245, 0.2);
+      }
+
+      h1 {
+        margin: 16px 0 12px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+      }
+
+      .subtitle {
+        margin: 0;
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 1.04rem;
+      }
+
+      .card {
+        background: rgba(22, 29, 38, 0.92);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 28px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+        backdrop-filter: blur(10px);
+      }
+
+      .meta {
+        margin-top: 20px;
+        padding: 14px 16px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
+
+      h2 {
+        margin-top: 32px;
+        margin-bottom: 12px;
+        font-size: 1.28rem;
+        color: #ffffff;
+      }
+
+      p {
+        margin: 0 0 16px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0 0 18px 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      strong {
+        color: var(--text);
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        padding: 22px 0 40px;
+        text-align: center;
+        color: #8fa4b8;
+        font-size: 0.94rem;
+      }
+
+      .highlight {
+        color: var(--primary);
+        font-weight: 700;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding: 16px;
         }
-        h1 { font-size: 24px; margin-bottom: 8px; }
-        h2 { font-size: 18px; margin-top: 24px; }
-        p { margin: 8px 0; }
-        .effective-date { color: #666; font-size: 14px; margin-bottom: 24px; }
+
+        .hero {
+          padding: 36px 0 18px;
+        }
+
+        .card {
+          padding: 22px 18px;
+          border-radius: 18px;
+        }
+
+        h2 {
+          margin-top: 26px;
+        }
+      }
     </style>
-</head>
-<body>
-    <h1>Terms of Service</h1>
-    <p class="effective-date">Effective Date: March 17, 2026</p>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <span class="badge">ChessClock</span>
+        <h1>Terms of Service</h1>
+        <p class="subtitle">
+          By downloading, installing, or using Chess Clock, you agree to be bound by these Terms of Service.
+        </p>
+      </section>
 
-    <p>Welcome to Chess Clock ("the App"). By downloading, installing, or using the App, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+      <section class="card">
+        <div class="meta">
+          <strong>Effective Date:</strong> March 17, 2026
+        </div>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By accessing or using Chess Clock, you confirm that you have read, understood, and agree to be bound by these Terms. These Terms apply to all users of the App.</p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By accessing or using Chess Clock, you confirm that you have read, understood, and agree to be bound by these Terms. These Terms apply to all users of the App.
+        </p>
 
-    <h2>2. Description of Service</h2>
-    <p>Chess Clock is a free mobile application that provides a digital chess clock with customizable time controls, multiple time control stages, increment modes (Fischer, Bronstein, Delay), color themes, and multi-language support. The App is designed for personal, non-commercial use.</p>
+        <h2>2. Description of Service</h2>
+        <p>
+          Chess Clock is a free mobile application that provides a digital chess clock with customizable time controls, multiple time control stages, increment modes (Fischer, Bronstein, Delay), color themes, and multi-language support. The App is designed for personal, non-commercial use.
+        </p>
 
-    <h2>3. Use of the App</h2>
-    <p>You agree to use the App only for its intended purpose as a chess timing tool. You may not:</p>
-    <ul>
-        <li>Reverse engineer, decompile, or disassemble the App</li>
-        <li>Modify, adapt, or create derivative works based on the App</li>
-        <li>Use the App for any unlawful purpose</li>
-        <li>Attempt to gain unauthorized access to the App's systems or networks</li>
-        <li>Distribute, sublicense, or transfer the App to third parties without authorization</li>
-    </ul>
+        <h2>3. Use of the App</h2>
+        <p>
+          You agree to use the App only for its intended purpose as a chess timing tool. You may not:
+        </p>
+        <ul>
+          <li>Reverse engineer, decompile, or disassemble the App</li>
+          <li>Modify, adapt, or create derivative works based on the App</li>
+          <li>Use the App for any unlawful purpose</li>
+          <li>Attempt to gain unauthorized access to the App's systems or networks</li>
+          <li>Distribute, sublicense, or transfer the App to third parties without authorization</li>
+        </ul>
 
-    <h2>4. Intellectual Property</h2>
-    <p>All content, design, graphics, and code within Chess Clock are the intellectual property of the developer (Ozan Baskan) and are protected by applicable copyright and intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the App for personal purposes.</p>
+        <h2>4. Intellectual Property</h2>
+        <p>
+          All content, design, graphics, and code within Chess Clock are the intellectual property of the developer (<strong>Ozan Baskan</strong>) and are protected by applicable copyright and intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to use the App for personal purposes.
+        </p>
 
-    <h2>5. Data and Privacy</h2>
-    <p>Your use of the App is also governed by our Privacy Policy. The App stores settings and preferences locally on your device using AsyncStorage. No personal data is collected, transmitted, or shared with third parties.</p>
+        <h2>5. Data and Privacy</h2>
+        <p>
+          Your use of the App is also governed by our <a href="https://ozanbaskan.github.io/pages/legal/chessclock/privacy-policy/">Privacy Policy</a>. The App stores settings and preferences <strong>locally on your device</strong> only. No personal data is collected, transmitted, or shared with third parties.
+        </p>
 
-    <h2>6. Availability and Updates</h2>
-    <p>We strive to keep the App available and functioning properly, but we do not guarantee uninterrupted or error-free operation. We may update, modify, or discontinue the App at any time without prior notice.</p>
+        <h2>6. Availability and Updates</h2>
+        <p>
+          We strive to keep the App available and functioning properly, but we do not guarantee uninterrupted or error-free operation. We may update, modify, or discontinue the App at any time without prior notice.
+        </p>
 
-    <h2>7. Disclaimer of Warranties</h2>
-    <p>The App is provided "as is" and "as available" without any warranties of any kind, either express or implied. We do not warrant that the App will meet your requirements, be uninterrupted, timely, secure, or error-free.</p>
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>
+          The App is provided <strong>"as is"</strong> and <strong>"as available"</strong> without any warranties of any kind, either express or implied. We do not warrant that the App will meet your requirements, be uninterrupted, timely, secure, or error-free.
+        </p>
 
-    <h2>8. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the App.</p>
+        <h2>8. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the App.
+        </p>
 
-    <h2>9. Changes to Terms</h2>
-    <p>We reserve the right to modify these Terms at any time. Changes will be effective upon posting the updated Terms within the App or on our website. Your continued use of the App after any changes constitutes acceptance of the new Terms.</p>
+        <h2>9. Changes to Terms</h2>
+        <p>
+          We reserve the right to modify these Terms at any time. Changes will be effective upon posting the updated Terms within the App or on our website. Your continued use of the App after any changes constitutes acceptance of the new Terms.
+        </p>
 
-    <h2>10. Governing Law</h2>
-    <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Turkey, without regard to conflict of law principles.</p>
+        <h2>10. Governing Law</h2>
+        <p>
+          These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic of Turkey</strong>, without regard to conflict of law principles.
+        </p>
 
-    <h2>11. Contact</h2>
-    <p>If you have any questions about these Terms, please contact us at: ozanbaskan@outlook.com</p>
-</body>
+        <h2>11. Contact</h2>
+        <p>
+          If you have any questions about these Terms, please contact us at:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:ozanbaskan@outlook.com">ozanbaskan@outlook.com</a>
+        </p>
+      </section>
+
+      <div class="footer">
+        © 2026 ChessClock. All rights reserved.
+      </div>
+    </main>
+  </body>
 </html>
