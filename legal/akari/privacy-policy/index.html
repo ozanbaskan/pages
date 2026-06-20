@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy — Akari</title>
+<style>
+  /* Design tokens lifted from the app's own theme so the in-app
+     webview shows a page that looks native to Akari.
+     Light:
+       surface       #FFFFFF
+       textPrimary   #1C2421
+       textSecondary #5C6863
+       accent (Akari amber, light) #E0921F
+     Dark:
+       surface       #14181A
+       textPrimary   #EAEFED
+       textSecondary #9AA6A1
+       accent (Akari amber, dark)  #F0A93A                            */
+
+  :root {
+    --surface:      #FFFFFF;
+    --surface-alt:  #F4F6F5;
+    --text:         #1C2421;
+    --text-soft:    #5C6863;
+    --accent:       #E0921F;
+    --rule:         rgba(28, 36, 33, 0.10);
+    --quote-bg:     rgba(224, 146, 31, 0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface:      #14181A;
+      --surface-alt:  #1A1F22;
+      --text:         #EAEFED;
+      --text-soft:    #9AA6A1;
+      --accent:       #F0A93A;
+      --rule:         rgba(234, 239, 237, 0.10);
+      --quote-bg:     rgba(240, 169, 58, 0.08);
+    }
+  }
+
+  html, body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--text);
+    font-family: "Nunito", "Noto Sans", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 22px 64px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+    line-height: 1.25;
+    margin: 0 0 6px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 32px 0 10px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.00rem;
+    margin: 20px 0 6px;
+    font-weight: 600;
+  }
+  p, li { color: var(--text); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus { text-decoration: underline; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  strong { font-weight: 700; }
+  em { color: var(--text-soft); font-style: italic; }
+  hr {
+    border: 0;
+    height: 1px;
+    background: var(--rule);
+    margin: 24px 0;
+  }
+
+  .meta {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    margin: 0 0 18px;
+  }
+  .meta strong { color: var(--text); font-weight: 600; }
+  .tldr {
+    background: var(--quote-bg);
+    border-left: 3px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 4px;
+    margin: 20px 0 28px;
+  }
+  .tldr p { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy — Akari: Light Up Logic Puzzle</h1>
+
+<p class="meta">
+  <strong>Publisher:</strong> Ozan Baskan &nbsp;·&nbsp;
+  <strong>App package:</strong> <code>com.ozanbaskan.akari</code><br>
+  <strong>Effective date:</strong> <em>2026-06-20 — updated on every material change.</em><br>
+  <strong>Contact:</strong> <a href="mailto:ozanbaskan7@gmail.com">ozanbaskan7@gmail.com</a>
+</p>
+
+<p>This page describes what the Akari app does and does not do with your
+data. We've tried to keep it short and specific instead of long and
+legalistic — if something on this page is unclear, email the address above
+and we'll fix it.</p>
+
+<div class="tldr">
+  <h3 style="margin-top:0;color:var(--accent)">TL;DR</h3>
+  <ul>
+    <li>We don't ask for an account. We don't have a server. We don't profile you.</li>
+    <li>Your puzzle progress lives only on your device.</li>
+    <li>Ads come from Google AdMob (a third party). AdMob may use a non-identifying advertising ID to choose an ad. You can reset or limit that ID in your device's Settings → Privacy at any time.</li>
+    <li>The one-time "Remove Ads" purchase is processed by Google Play Billing; we never see your card or payment details.</li>
+    <li>The app does not collect, store, sell, or share personally identifying information. Period.</li>
+  </ul>
+</div>
+
+<h2>What stays on your device</h2>
+<p>Everything that makes the game "yours" stays in the app's local
+storage, never leaves the device, and never reaches us:</p>
+<ul>
+  <li>Solved-puzzle counts, best times, current and longest streaks, last
+      daily completion date.</li>
+  <li>The trophy progress counters (Speed Demon, Solo Solve, Theme
+      Explorer, etc.) and a private high-water-mark timestamp used to
+      keep streak counters honest against device-clock changes.</li>
+  <li>Your in-progress puzzle (daily, picker, and per-level autosaves).</li>
+  <li>Your settings — theme, language, sound and haptics toggles,
+      accessibility preferences.</li>
+  <li>Your IAP entitlement (whether you've purchased "Remove Ads"). We
+      store only the fact of the purchase, never the underlying receipt
+      or any Google account identifier.</li>
+</ul>
+<p>You can erase all of this at any time by uninstalling the app or by
+clearing the app's data in your device's Settings → Apps → Akari.</p>
+
+<h2>What third parties may collect (and how to control it)</h2>
+
+<h3>Google AdMob (advertising)</h3>
+<p>When ads are enabled, AdMob may use the <strong>Android Advertising
+ID (AAID)</strong> on your device, plus coarse device and network
+metadata (model, OS version, country, language, IP-derived country) to
+pick an ad. AdMob's behavior is governed by
+<a href="https://policies.google.com/privacy">Google's Privacy &amp; Terms</a>
+and their
+<a href="https://developers.google.com/admob/android/privacy">Mobile Ads SDK data disclosures</a>.</p>
+<p>You can opt out of personalized ads or reset the AAID at any time:</p>
+<ul>
+  <li><strong>Android 13+:</strong> Settings → Security &amp; Privacy → Privacy → Ads.</li>
+  <li><strong>Android 12 and below:</strong> Settings → Google → Ads.</li>
+</ul>
+<p>Buying the in-app "Remove Ads" item disables interstitial ads
+entirely. Rewarded video remains available because the player has to
+opt into watching it — we don't show ads you didn't ask for.</p>
+
+<h3>Google Play Billing (in-app purchase)</h3>
+<p>The "Remove Ads" purchase is processed by Google Play. Google Play
+handles your payment and gives the app a confirmation that you own
+the item. We never receive or store your payment method, billing
+address, or Google account.</p>
+
+<h3>Google Firebase Remote Config (configuration only)</h3>
+<p>The app uses Firebase Remote Config to fetch tunable values such as
+ad frequency caps. The request is anonymous — it carries an instance
+ID Google uses to deliver the right config, but no personal data. See
+<a href="https://firebase.google.com/support/privacy">Firebase data collection details</a>.</p>
+
+<h3>Network time (anti-cheat)</h3>
+<p>To keep streak progress honest when device clocks are wrong or
+deliberately altered, the app reads the time from public NTP servers
+(via the <code>flutter_kronos</code> library) the first time it has
+network access. The NTP request reveals only your device's IP address
+to the public NTP pool; no app-side identifier is attached.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13 and does not knowingly
+collect personal information from them. AdMob's content rating is
+configured to "General audiences." If you believe a child has used
+the app on your device, you can uninstall it to clear all locally
+stored progress.</p>
+
+<h2>Permissions the app requests</h2>
+<ul>
+  <li><strong>Internet</strong> — to load ads, verify the IAP, fetch
+      Remote Config, and read NTP time. The app is fully playable
+      offline; only those four features need a network.</li>
+  <li><strong>(No other runtime permissions.)</strong> The app does
+      not request contacts, photos, microphone, location, calendar, or
+      storage.</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>If we materially change what data the app handles, we update the
+<strong>Effective date</strong> above and announce the change in the
+app's release notes. Continued use of the app after the effective
+date constitutes acceptance.</p>
+
+<h2>How to contact us</h2>
+<p>Email <a href="mailto:ozanbaskan7@gmail.com">ozanbaskan7@gmail.com</a>
+with the subject line "Akari privacy" and we'll respond within 7
+days.</p>
+
+</main>
+</body>
+</html>
