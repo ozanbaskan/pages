@@ -112,7 +112,7 @@
 <p class="meta">
   <strong>Publisher:</strong> Ozan Baskan &nbsp;·&nbsp;
   <strong>App package:</strong> <code>com.ozanbaskan.hitori</code><br>
-  <strong>Effective date:</strong> <em>2026-06-04 — updated on every material change.</em><br>
+  <strong>Effective date:</strong> <em>2026-07-14 — updated on every material change.</em><br>
   <strong>Contact:</strong> <a href="mailto:ozanbaskan7@gmail.com">ozanbaskan7@gmail.com</a>
 </p>
 
@@ -128,6 +128,7 @@ and we'll fix it.</p>
     <li>Your puzzle progress lives only on your device.</li>
     <li>Ads come from Google AdMob (a third party). AdMob may use a non-identifying advertising ID to choose an ad. You can reset or limit that ID in your device's Settings → Privacy at any time.</li>
     <li>The one-time "Remove Ads" purchase is processed by Google Play Billing; we never see your card or payment details.</li>
+    <li>Anonymous usage statistics (which levels are played, how long solves take) and crash reports go to Google Firebase so we can fix bugs and balance difficulty. No name, no account, no precise location — and you can switch usage statistics off in Settings → Privacy.</li>
     <li>The app does not collect, store, sell, or share personally identifying information. Period.</li>
   </ul>
 </div>
@@ -182,6 +183,32 @@ ad frequency caps. The request is anonymous — it carries an instance
 ID Google uses to deliver the right config, but no personal data. See
 <a href="https://firebase.google.com/support/privacy">Firebase data collection details</a>.</p>
 
+<h3>Google Firebase Analytics &amp; Crashlytics (usage statistics and crash reports)</h3>
+<p>The app sends anonymous usage events (for example "level 26
+started", "level 26 solved in 94 seconds, 1 hint used") and crash
+reports to Google Firebase so we can find levels that are too hard,
+diagnose bugs, and keep the game stable. This data contains no name,
+no email, no account, no contacts, no precise location, and nothing
+you typed. Events are tied to a random per-install app-instance ID —
+and, only where your ad settings allow it, the same resettable
+advertising ID AdMob uses — never to you as a person.</p>
+<ul>
+  <li><strong>You can turn usage analytics off at any time</strong> in
+      Settings → Privacy → "Share anonymous usage data". Crash
+      reporting stays on because it carries no behavioural data and is
+      how we fix crashes.</li>
+  <li>In the European Economic Area, the app asks for consent before
+      collecting any of this.</li>
+  <li>Google retains usage events for at most 14 months and crash
+      reports for about 90 days.</li>
+  <li>To have your analytics data deleted, email the address below
+      with the subject "data deletion" — we trigger Google's deletion
+      API for your app instance and confirm within 7 days.
+      Uninstalling the app also stops all collection immediately.</li>
+</ul>
+<p>Firebase's own handling is described in
+<a href="https://firebase.google.com/support/privacy">Firebase data collection details</a>.</p>
+
 <h3>Network time (anti-cheat)</h3>
 <p>To keep streak progress honest when device clocks are wrong or
 deliberately altered, the app reads the time from public NTP servers
@@ -199,8 +226,9 @@ stored progress.</p>
 <h2>Permissions the app requests</h2>
 <ul>
   <li><strong>Internet</strong> — to load ads, verify the IAP, fetch
-      Remote Config, and read NTP time. The app is fully playable
-      offline; only those four features need a network.</li>
+      Remote Config, read NTP time, and send the anonymous usage/crash
+      reports described above. The app is fully playable offline; only
+      those features need a network.</li>
   <li><strong>(No other runtime permissions.)</strong> The app does
       not request contacts, photos, microphone, location, calendar, or
       storage.</li>
