@@ -99,7 +99,7 @@
 <p class="meta">
   <strong>Publisher:</strong> Ozan Baskan &nbsp;·&nbsp;
   <strong>App package:</strong> <code>com.ozanbaskan.intervaltimer</code><br>
-  <strong>Effective date:</strong> <em>2026-07-13 — updated on every material change.</em><br>
+  <strong>Effective date:</strong> <em>2026-07-31 — updated on every material change.</em><br>
   <strong>Contact:</strong> <a href="mailto:ozanbaskan7@gmail.com">ozanbaskan7@gmail.com</a>
 </p>
 
@@ -115,6 +115,7 @@ above and we'll fix it.</p>
     <li>Your workouts, presets, and settings live only on your device.</li>
     <li>Ads come from Google AdMob (a third party) and appear only on the workout-complete screen. AdMob may use a non-identifying advertising ID to choose an ad. You can reset or limit that ID in your device's Settings → Privacy at any time.</li>
     <li>The one-time "Pro" purchase is processed by Google Play Billing; we never see your card or payment details.</li>
+    <li>The app uses Google Firebase for <strong>anonymous</strong> usage statistics and crash reports — no personal data. You can switch it off in Settings → General → "Share anonymous usage data."</li>
     <li>The app does not collect, store, sell, or share personally identifying information. Period.</li>
   </ul>
 </div>
@@ -159,6 +160,32 @@ your payment and gives the app a confirmation that you own the item. We
 never receive or store your payment method, billing address, or Google
 account.</p>
 
+<h3>Firebase Analytics &amp; Crashlytics (anonymous usage and crash reporting)</h3>
+<p>The app uses <strong>Google Firebase Analytics</strong> and
+<strong>Firebase Crashlytics</strong> to understand how the app is used in
+aggregate and to detect and fix crashes. This collection is
+<strong>anonymous</strong>: it is not tied to your name, email, or any
+account, and we do not use it to identify or profile you.</p>
+<ul>
+  <li><strong>Analytics</strong> records non-identifying events — such as
+      starting or completing a workout, saving or duplicating a preset, being
+      shown the "Pro" upsell, unlocking Pro, and finishing onboarding — along
+      with coarse device and app metadata (app version, OS version, device
+      model, language, and an IP-derived country; we do not store the IP
+      address itself). Firebase assigns a resettable app-instance ID.</li>
+  <li><strong>Crashlytics</strong> records crash and error reports — a stack
+      trace plus device state at the moment of the crash and an anonymous
+      installation identifier — so we can reproduce and fix problems.</li>
+</ul>
+<p>Firebase's handling of this data is governed by
+<a href="https://firebase.google.com/support/privacy">Firebase's Privacy and
+Security</a> and
+<a href="https://policies.google.com/privacy">Google's Privacy &amp; Terms</a>.</p>
+<p>You can turn all of this off at any time in the app:
+<strong>Settings → General → "Share anonymous usage data."</strong> It is on
+by default; when it is off, no analytics events or crash reports leave your
+device.</p>
+
 <h2>Children</h2>
 <p>The app is not directed at children under 13 and does not knowingly
 collect personal information from them. AdMob's content rating is
@@ -168,9 +195,10 @@ stored progress.</p>
 
 <h2>Permissions the app requests</h2>
 <ul>
-  <li><strong>Internet</strong> — to load ads and verify the in-app
-      purchase. The timer is fully functional offline; only those two
-      features need a network.</li>
+  <li><strong>Internet</strong> — to load ads, verify the in-app purchase,
+      and (unless you opt out) send anonymous usage analytics and crash
+      reports. The timer is fully functional offline; only these features need
+      a network.</li>
   <li><strong>Foreground service (media playback)</strong> — to keep the
       timer running and fire audio/vibration cues while the screen is off,
       the app is backgrounded, or the device is locked.</li>
